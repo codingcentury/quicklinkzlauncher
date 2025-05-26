@@ -35,11 +35,17 @@ Visit index.php in your browser.
 📂 Folder Structure
 
 quicklinkzlauncher/
+
   ├── index.php
+  
   ├── style.css
+  
   ├── linkz.json
+  
   ├── Dockerfile
+  
   ├── docker-compose.yml
+  
   └── README.md
 
 🔒 Security
