@@ -32,7 +32,13 @@ Make sure linkz.json is writable by the web server.
 Edit index.php and set your own password ($admin_password).
 Visit index.php in your browser.
 📂 Folder Structure
-quick-linkz-launcher/ ├── index.php ├── style.css ├── linkz.json ├── Dockerfile ├── docker-compose.yml └── README.md
+quicklinkzlauncher/
+  ├── index.php
+  ├── style.css
+  ├── linkz.json
+  ├── Dockerfile
+  ├── docker-compose.yml
+  └── README.md
 
 🔒 Security
 The default admin password is 'password' (without the quotes) for demo purposes.
