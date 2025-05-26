@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  quick-linkz-launcher:
+  quicklinkzlauncher:
     build: .
     ports:
       - "9697:80"
