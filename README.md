@@ -31,7 +31,9 @@ Copy all files to a folder on your PHP-enabled web server.
 Make sure linkz.json is writable by the web server.
 Edit index.php and set your own password ($admin_password).
 Visit index.php in your browser.
+
 📂 Folder Structure
+
 quicklinkzlauncher/
   ├── index.php
   ├── style.css
