@@ -1,10 +1,19 @@
 version: '3.8'
-
 services:
-  quicklinkzlauncher:
+  app:
     build: .
+    expose:
+      - "9000"
+    volumes:
+      - ./linkz.json:/var/www/html/linkz.json
+  web:
+    image: nginx:alpine
     ports:
       - "9697:80"
     volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./index.php:/var/www/html/index.php
+      - ./style.css:/var/www/html/style.css
       - ./linkz.json:/var/www/html/linkz.json
-    restart: unless-stopped
+    depends_on:
+      - app
