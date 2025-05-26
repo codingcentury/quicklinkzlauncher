@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  quick-linkz-launcher:
+    build: .
+    ports:
+      - "9697:80"
+    volumes:
+      - ./linkz.json:/var/www/html/linkz.json
+    restart: unless-stopped
