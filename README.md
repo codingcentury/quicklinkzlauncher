@@ -14,7 +14,7 @@ Responsive dark theme.
 No database required (uses a simple JSON file).
 Dockerized for easy deployment anywhere.
 🛠️ Quick Start (with Docker)
-Clone this repo: git clone https://github.com/yourusername/quick-linkz-launcher.git cd quick-linkz-launcher
+Clone this repo: git clone [https://github.com/yourusername/quicklinkzlauncher.git](https://github.com/codingcentury/quicklinkzlauncher.git) cd quick-linkz-launcher
 
 Build and run with Docker Compose: docker compose up --build > The app will be available at http://localhost:9697
 
