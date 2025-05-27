@@ -1,5 +1,5 @@
 # Quick Linkz Launcher
-A very simple, minimalistic, self-hosted, password-protected link launchpad for your LAN or personal projects.
+A very simple, minimalistic, self-hosted, password-protected links launchpad for your LAN or personal projects.
 Great mini-app, PHP based with no JS required client side/browser for use in setups with different
 dockerized applications as well as other personal quick links store launcher that greatly helps
 keep track of your docker apps and the occupied server ports your docker apps use.
