@@ -1,19 +1,18 @@
-# Use official PHP-FPM Alpine image
 FROM php:8.3-fpm-alpine
 
-# Install only needed PHP extensions (none for your mini app)
-# RUN docker-php-ext-install pdo pdo_mysql (if needed)
+# Install Nginx
+RUN apk add --no-cache nginx
 
-# Copy app files
-COPY . /var/www/html/
+# Copy project files
+COPY . /var/www/html
 
-# Set permissions for linkz.json
-RUN chown -R www-data:www-data /var/www/html/linkz.json && chmod 664 /var/www/html/linkz.json
+# Copy Nginx config
+COPY nginx.conf /etc/nginx/nginx.conf
 
-# Use www-data user for security
-USER www-data
+# Copy startup script
+COPY run.sh /run.sh
+RUN chmod +x /run.sh
 
-# Expose port 9000 for PHP-FPM
 EXPOSE 80
 
-CMD ["php-fpm"]
+CMD ["/run.sh"]
