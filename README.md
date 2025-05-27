@@ -1,5 +1,5 @@
 # Quick Linkz Launcher
-A simple, very minimalistic, self-hosted, password-protected link launchpad for your LAN or personal projects.
+A very simple, minimalistic, self-hosted, password-protected link launchpad for your LAN or personal projects.
 Great mini-app, PHP based with no JS required client side/browser for use in setups with different
 dockerized applications as well as other personal quick links store launcher that greatly helps
 keep track of your docker apps and the occupied server ports your docker apps use.
@@ -8,23 +8,29 @@ saved links in a new browser tab for convenience.
 Enjoy!
 
 🚀 Features
-Add, edit, and delete links via a web interface.
+Add, edit, and delete links via a slim, web interface.
 Password-protected admin actions (default: password).
 Responsive dark theme.
 No database required (uses a simple JSON file).
 Dockerized for easy deployment anywhere.
 🛠️ Quick Start (with Docker)
-Clone this repo: git clone [https://github.com/yourusername/quicklinkzlauncher.git](https://github.com/codingcentury/quicklinkzlauncher.git) cd quick-linkz-launcher
+Find & Pull ready-made docker image from here:
+https://hub.docker.com/r/codingcentury/quicklinkzlauncher
 
-Build and run with Docker Compose: docker compose up --build > The app will be available at http://localhost:9697
+Clone this repo: git clone [https://github.com/yourusername/quicklinkzlauncher.git](https://github.com/codingcentury/quicklinkzlauncher.git) cd quicklinkzlauncher
+Build and run with Dockerfile:
+docker build -t quicklinkzlauncher:latest .
+#Do not omit, or do not to paste the above command to your terminal/cli eaxactly as shown,
+including the .(dot) at the end, otherwise the image will not be build and you will get an error.
 
+After building the image you can then run it with this command:
+docker run -d -p 9697:80 quicklinkzlauncher
+after which you can then browse this app at http://localhost:9697
 Login as admin:
 Use the default password: password
-
 Change this password in index.php before using in production!
-
 Stop the app:
-Press Ctrl+C in your terminal, then: docker compose down
+Type: docker stop quicklinkzlauncher
 
 📝 Manual (Non-Docker) Setup
 Copy all files to a folder on your PHP-enabled web server.
