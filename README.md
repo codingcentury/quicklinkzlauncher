@@ -63,3 +63,8 @@ Feel free to open issues or suggest features.
 📄 License
 This project is free to use, modify, and share.
 MIT License.
+![Screenshot 2025-05-26 at 22-36-45 Quick Linkz Launcher](https://github.com/user-attachments/assets/07089097-f7af-42e4-be78-e37d7fbafda6)
+
+![Screenshot 2025-05-26 at 22-35-40 Quick Linkz Launcher](https://github.com/user-attachments/assets/ad0cf51e-b550-489e-8008-cbeb75d3a6b7)
+
+![Screenshot 2025-05-26 at 22-36-57 Quick Linkz Launcher](https://github.com/user-attachments/assets/bd77ef6e-6d52-42c2-9f54-99de55f149c8)
